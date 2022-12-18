@@ -19,7 +19,7 @@ namespace mynamespase
             Console.Write("Кол-во колонок: ");
             Console.WriteLine(array.GetUpperBound(1) + 1 + " ");
 
-            for(int i = 0; i < array.GetLength(0) + 1; i++)
+            for(int i = 0; i < array.GetUpperBound(0) + 1; i++)
             {
                 for(int k = 0; k < array.GetUpperBound(1) + 1; k++)
                 {
@@ -27,6 +27,7 @@ namespace mynamespase
                 }
                 Console.WriteLine();
             }
+            Console.ReadKey();
         }
     }
 }
